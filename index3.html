@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./Script/jquery-3.7.0.min.js" type="text/javascript"></script>
+
+
+</head>
+<body>
+    <p>Mouse enter,mouseleave,click on this paragraph</p>
+    <script>
+        $("p").on({
+            mouseenter:function(){
+                $(this).css("background-color","yellow" )
+
+            },
+            mouseleave:function(){
+                $(this).css("background-color","green" )
+
+            },
+            click:function(){
+                $(this).css("background-color","red" )
+
+            },
+        });
+    </script>
+    
+</body>
+</html>
